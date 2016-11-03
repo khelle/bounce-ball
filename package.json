@@ -9,7 +9,8 @@
   },
   "scripts": {
     "app:start": "node app.js",
-    "dev:rollup": "./node_modules/.bin/rollup -c --environment BUILD:debug"
+    "dev:rollup": "./node_modules/.bin/rollup -c --environment BUILD:debug",
+    "dev:test": "./node_modules/.bin/mocha --recursive --require reify --compilers js:babel-register"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -21,7 +22,12 @@
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.0",
     "babel-preset-es2015-rollup": "^1.2.0",
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "mocha": "^3.1.2",
+    "reify": "^0.3.8",
     "rollup": "^0.36.3",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-uglify": "^1.0.1"

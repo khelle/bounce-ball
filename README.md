@@ -26,7 +26,7 @@ To rebuild the project, use:
 
     npm run dev:rollup
 
-By default the building does not uglify the scripts, to change this behaviour edit `dev:rollup` option in `package.json` and change build environment to `BUILD:debug`.
+By default the building does not uglify the scripts, to change this behaviour edit `dev:rollup` option in `package.json` and change build environment to `BUILD:production`.
 
 ## Tests
 
